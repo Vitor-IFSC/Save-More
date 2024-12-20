@@ -1,0 +1,52 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Logo -->
+    <a href="{% url 'index' %}" id="link-logo-home">
+        <img src="{% static 'assets/logo/logo-2-azul.png' %}" alt="Logo Save More" id="fixed-logo-registro">
+    </a>
+
+    <!-- Seção de Cadastro -->
+    <section class="registro-out">
+        <!-- Imagem Lateral -->
+        <img src="{% static 'assets/imagens/img-registro.png' %}" alt="Imagem de Registro" class="registro-img">
+
+        <!-- Formulário -->
+        <div class="registro-form-out">
+            <div class="registro-form">
+                <h2>Cadastro</h2>
+
+                <!-- Formulário Django -->
+                <form action="{% url 'registro' %}" class="form-registro" method="POST" style="display: flex; justify-content: center; padding-top: 10px;">
+                    {% csrf_token %}
+
+                    <!-- Campos do Formulário -->
+                    <div class="row-form">
+                        {% for field in form.visible_fields %}
+                            <div class="registro-form-group" style="width: 400px;">
+                                <label for="{{ field.id_for_label }}" class="registro-label">
+                                    {{ field.label }}
+                                </label>
+                                {{ field }}
+                                {% if field.errors %}
+                                    <div class="error-msg">
+                                        {{ field.errors|join:', ' }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Botão de Submissão -->
+                    <div class="registro-form-group" style="display: flex; justify-content: center; padding-top: 50px;">
+                        <button type="submit" class="btn-submit">
+                            Logar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

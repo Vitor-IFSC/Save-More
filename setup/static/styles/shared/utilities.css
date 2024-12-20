@@ -1,0 +1,40 @@
+* {
+    font-family: "JetBrains Mono";
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    --side-margin: 20px 40px; /*  */
+    --verde-claro: #98FB98; /*50% fundos e áreas principais*/
+    --verde-escuro: #006400; /*20% cabeçalhos, rodapés e blocos de conteúdo*/
+    --azul-suave: #87CEEB; /*20% navegação, ícones e links*/
+    --laranja: #FFA07A; /*10% botões*/
+    --branco: #FFFFFF; /*usado estrategicamente*/
+    --cinza: #D3D3D3; /*fundos e blocos*/
+    --amarelo-claro: #FFFFE0; /*rodapé*/
+}
+.out-map-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 15px;
+}
+
+
+.map-container {
+    width: 100%;       /* O mapa ocupará toda a largura do contêiner */
+    max-width: 1150px; /* Defina uma largura máxima para evitar que fique grande demais */
+    height:550px;     /* Defina a altura para o tamanho desejado */
+    margin: 0 auto;    /* Centraliza o mapa horizontalmente */
+    overflow: hidden;  /* Oculta qualquer conteúdo que exceda o contêiner */
+    position: relative;
+    border-radius: 8px;
+}
+
+/* Folium geralmente usa a classe leaflet-container, então garantimos o ajuste do contêiner interno */
+.map-container .leaflet-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+

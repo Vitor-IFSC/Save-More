@@ -1,0 +1,216 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    {% include 'partials/_menu.html' %}
+    <main class="main-container">
+        <div class="main-image-section">
+            <img src="{% static 'assets/imagens/img-main.png' %}" alt="Crianças brincando">
+        </div>
+        <div class="main-info-section">
+            <h1>BRASIL</h1>
+            <div class="info-columns-container">
+                <div class="info-column">
+                    <h1>21 milhões</h1>
+                    <p>de pessoas passam fome no Brasil, de acordo com o relatório da ONU, 2020.</p>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-column">
+                    <h1>70,3 milhões</h1>
+                    <p>de pessoas passam por algum tipo de insegurança alimentar no Brasil, o que representa 32,8% da população brasileira</p>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-column">
+                    <h1>46 toneladas</h1>
+                    <p>de comida são desperdiçadas por ano no Brasil. Cerca de 30% da comida produzida por ano</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="intro-section">
+        <div class="intro-header">
+            <h1>SAVE MORE</h1>
+            <p>Julho/2024</p>
+            <h2>DOANDO POR AMOR</h2>
+            <h1>COLETA E DISTRIBUIÇÃO</h1>
+        </div>
+        <div class="stats-columns">
+            <div class="stats-item">
+                <h1>XXX TONELADAS</h1>
+                <p>DOADOS</p>
+                <p>Alimentos doados no ano de 2024 com auxilio do projeto SaveMore</p>
+            </div>
+            <div class="stats-item">
+                <h1>XXX TONELADAS</h1>
+                <p>DOADOS</p>
+                <p>Alimentos doados no ano de 2024 com auxilio do projeto SaveMore</p>
+            </div>
+        </div>
+    </section>
+    <section class="cause-section">
+        <img src="{% static '/assets/imagens/img-ajudando-causa.png' %}" alt="Ajudando a Causa">
+        <div class="cause-text">
+            <h1>AJUDE A CAUSA</h1>
+            <p>No Brasil, milhões de pessoas precisam de ajuda diariamente. O SaveMore tem esse propósito, ajudar o máximo de pessoas que conseguir. Mas para isso, precisamos de sua ajuda.</p>
+        </div>
+    </section>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - SaveMore</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333; background-color: #f5f5f5; line-height: 1.6; margin: 0; padding: 0;">
+
+    <section style="padding: 2rem; text-align: center;">
+        <h1 style="font-size: 2rem; color: #2E7D32; margin-bottom: 1rem;">Quem somos nós?</h1>
+        <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 2rem;">
+            A equipe do projeto SAVEMORE, do IFSC Campus Xanxerê, surgiu ao final do 3º ano do ensino médio,
+            unindo nossa paixão por informática e o desejo de impactar positivamente a comunidade. 
+            Acreditamos que a tecnologia é uma força poderosa para o bem e estamos aqui para transformar desafios
+            em oportunidades, passo a passo.
+        </p>
+    </section>
+
+    <div style="display: flex; justify-content: center; gap: 1rem; background-color: #d9d9d9; padding: 2rem;">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;background-color: white; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; flex: 1; max-width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1.5rem; color: #2E7D32; margin-bottom: 1rem; text-transform: uppercase;">Missão</h2>
+            <img src="../static/assets/imagens/missao.png" alt="Ícone de Missão" style="width: 100px; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #555;">
+                Transformar alimentos desperdiçados em esperança. Conectar restaurantes e mercados a instituições que
+                combatem a fome. Reduzir o desperdício e gerar impacto positivo na comunidade.
+            </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;background-color: white; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; flex: 1; max-width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1.5rem; color: #2E7D32; margin-bottom: 1rem; text-transform: uppercase;">Visão</h2>
+            <img src="../static/assets/imagens/missao2.png" alt="Ícone de Visão" style="width: 100px; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #555;">
+                Transformar alimentos excedentes em esperança para Xanxerê, unindo a comunidade na luta contra a fome.
+                Cada doação é um ato de amor que promove mudanças positivas.
+            </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;background-color: white; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; flex: 1; max-width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1.5rem; color: #2E7D32; margin-bottom: 1rem; text-transform: uppercase;">Valores</h2>
+            <img src="../static/assets/imagens/missao3.png" alt="Ícone de Valores" style="width: 100px; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #555;">
+                No SaveMore, promovemos solidariedade, sustentabilidade e compromisso, priorizando transparência e
+                colaboração.
+            </p>
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; color: #333;">
+
+    <!-- Seção principal -->
+    <div style="display: flex; min-height: 100vh;">
+        
+        <!-- Coluna esquerda -->
+        <div style="flex: 1; background-color: #2E7D32; color: white; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <a href="#" style="align-self: flex-start; color: white; font-size: 1.5rem; text-decoration: none;">&#x2190;</a>
+            <h1 style="font-size: 2.5rem; margin: 1rem 0;">Contate-nos</h1>
+            <p style="font-size: 1rem; line-height: 1.5;">
+                Estamos aqui para ajudar e adoraríamos ouvir de você.
+            </p>
+        </div>
+
+        <!-- Coluna direita -->
+        <div style="flex: 2; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #f9f9f9;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">FORMULARIO</h2>
+            <form style="width: 100%; max-width: 400px;">
+                <!-- Campo Nome -->
+                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Nome*</label>
+                <input type="text" id="name" name="name" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                
+                <!-- Campo Email -->
+                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email*</label>
+                <input type="email" id="email" name="email" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                
+                <!-- Campo Telefone -->
+                <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Telefone*</label>
+                <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                
+                <!-- Área de Texto -->
+                <textarea id="message" name="message" rows="4" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px;" placeholder="Digite sua mensagem..."></textarea>
+                
+                <!-- Checkboxes -->
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <input type="checkbox" name="terms" style="margin-right: 0.5rem;"> Concordo com os <a href="#" style="color: #2E7D32; text-decoration: none; margin-left: 0.2rem;">Termos de Uso</a>
+                    </label>
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" name="privacy" style="margin-right: 0.5rem;"> Concordo com as <a href="#" style="color: #2E7D32; text-decoration: none; margin-left: 0.2rem;">Políticas de Privacidade</a>
+                    </label>
+                </div>
+
+                <!-- Botão de Registro -->
+                <button type="submit" style="width: 100%; padding: 1rem; background-color: #FF7043; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;">
+                    REGISTRO
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas Parceiras</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; color: #333;">
+
+    <!-- Seção Empresas Parceiras -->
+    <div style="padding: 2rem; text-align: center; background-color: #f9f9f9;">
+        <h1 style="color: #2E7D32; font-size: 2rem; margin-bottom: 2rem;">EMPRESAS PARCEIRAS:</h1>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; background-color: #e0e0e0; padding: 1rem; border-radius: 8px;">
+            <div style="background-color: white; padding: 1rem; border-radius: 8px; width: 150px; height: 100px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="../static/assets/imagens/brasao.png" alt="Badotti" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div style="background-color: white; padding: 1rem; border-radius: 8px; width: 150px; height: 100px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="../static/assets/imagens/badotti.png" alt="Brasão" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div style="background-color: white; padding: 1rem; border-radius: 8px; width: 150px; height: 100px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="../static/assets/imagens/brasao.png" alt="Badotti" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div style="background-color: white; padding: 1rem; border-radius: 8px; width: 150px; height: 100px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="../static/assets/imagens/badotti.png" alt="Brasão" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div style="background-color: white; padding: 1rem; border-radius: 8px; width: 150px; height: 100px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="../static/assets/imagens/brasao.png" alt="Badotti" style="max-width: 100%; max-height: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Nossa Equipe -->
+    <div style="padding: 2rem; text-align: center;">
+        <h2 style="color: #2E7D32; font-size: 1.5rem; margin-bottom: 1rem;">NOSSA EQUIPE:</h2>
+        <div style="background-color: #e0e0e0; padding: 1rem; border-radius: 8px; display: flex; justify-content: center; align-items: center; gap: 1rem;">
+            <span style="font-size: 1rem;">&lt;--</span>
+            <span style="font-size: 1rem;">Carlos Eduardo Marina -</span>
+            <span style="font-size: 1rem;">Deivid Lucas Rodrigues Paim -</span>
+            <span style="font-size: 1rem;">Vitor Eduardo Ramilio</span>
+            <span style="font-size: 1rem;">--&gt;</span>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.5; color: #333;">
+            Essa é nossa equipe de apoiadores, movidos por solidariedade, sustentabilidade e compromisso, pretendem fazer nosso estado e cidade um lugar melhor.
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+    {% include 'partials/_footer.html' %}
+{% endblock %}

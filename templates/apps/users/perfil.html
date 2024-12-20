@@ -1,0 +1,35 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    {% include 'partials/_menu.html' %}
+    <section class="profile-section" style="display: flex; flex-direction: collumn; width: auto; height: 650px;">
+        <div class="profile-photo-container">
+            <img src="{% static '/assets/ícones/img-perfil.png' %}" alt="Foto do usuário">
+            <h1>Username</h1>
+            <h2>Tipo de usuário</h2>
+        </div>
+        <div class="profile-data-container">
+            <h1>Perfil de usuário</h1>
+            <div class="perfil-form-group">
+                <label for="nome">Nome Completo:</label>
+                <p id="nome">Nome do Usuário</p>
+            </div>
+            <div class="perfil-form-group">
+                <label for="email">Email:</label>
+                <p id="email">email@exemplo.com</p>
+            </div>
+            <div class="perfil-form-group">
+                <label for="telefone">Telefone:</label>
+                <p id="telefone">(11) 98765-4321</p>
+            </div>
+            <div class="perfil-form-group">
+                <label for="tipo_documento">Tipo de Documento:</label>
+                <p id="tipo_documento">CPF</p>
+            </div>
+            <div class="perfil-form-group">
+                <label for="documento">CPF/CNPJ:</label>
+                <p id="documento">123.456.789-00</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

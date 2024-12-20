@@ -1,0 +1,22 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#fixed-logo-login {
+    position: fixed; /* Fixa a logo em relação à janela do navegador */
+    top: 15px; /* Distância do topo da página */
+    right: 15px; /* Distância da direita da página */
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto; /* Mantém a proporção */
+    z-index: 1000; /* Garante que fique acima de outros elementos da página */
+}
+
+#fixed-logo-registro {
+        position: fixed; /* Fixa a logo em relação à janela do navegador */
+        top: 15px; /* Distância do topo da página */
+        right: 1375px; /* Distância da direita da página */
+        width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+        height: auto; /* Mantém a proporção */
+        z-index: 1000; /* Garante que fique acima de outros elementos da página */
+}

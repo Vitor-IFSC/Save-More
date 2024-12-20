@@ -1,0 +1,7 @@
+--verde-claro: 98FB98; 50% fundos e áreas principais
+--verde-escuro: 006400; 20% cabeçalhos, rodapés e blocos de conteúdo
+--azul-suave: 87CEEB; 20% navegação, ícones e links
+--laranja: FFA07A; 10% botões
+--branco: FFFFFF; usado estrategicamente
+--cinza: D3D3D3; fundos e blocos
+--amarelo-claro: FFFFE0; rodapé

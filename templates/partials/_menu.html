@@ -1,0 +1,27 @@
+{% load static %}
+<header>
+    <div class="header-img-logo">
+        <a href="{% url 'index' %}" id="link-logo-home">
+            <img href="" class="" src="{% static 'assets/logo/logo-2-azul.png' %}" alt="Logo Save More">
+        </a>
+        
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href=""><h2> SOBRE NÓS </h2></a></li>
+            <li><a href=""><h2> CONTATO </h2></a></li>
+            <li><a href=""><h2> PARCEIROS </h2></a></li>
+            <li><a href="{% url 'mapa_view' %}"><h2> DOAÇÃO </h2></a></li>
+            <li><a href="{% url 'perfil' %}"><h2> PERFIL </h2></a></li>
+          </ul>
+    </nav>
+    <div class="header-buttons">
+        <div class="header-button">
+            <a href="{% url 'registro' %}"><h2> Cadastro </h2></a>
+        </div>
+        <div class="header-button">
+            <a href="{% url 'login' %}"><h2> Logar </h2></a>
+        </div>
+    </div>
+    
+</header>

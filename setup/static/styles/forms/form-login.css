@@ -1,0 +1,97 @@
+.row-form {
+    display: flex;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-form .row-form * {
+    margin-bottom: 0 !important;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente no formulário */
+    gap: 10px;
+}
+
+.login-form-group {
+    height: 45px;
+    width: 100%; 
+    margin-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative; 
+}
+.login-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.login-form-group input, .login-form-group select {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/* Ajustando o campo de senha */
+.login-form-group input[type="password"], .login-form-group input[type="text"] {
+    padding-right: 40px; /* Espaço para o botão dentro do campo */
+}
+/* Estilo do botão de mostrar senha dentro do campo */
+.login-show-password {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+.login-show-password:focus {
+    outline: none;
+}
+
+.form-login .login-form-group button[type="submit"] {
+    background-color: var(--laranja); /* Cor de fundo verde */
+    color: black; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 12px 200px 12px 200px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    align-self: center;
+}
+.login-checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+    justify-content: flex-start; /* Alinha à esquerda */
+    margin-bottom: 8px;
+}
+
+.login-checkbox-label input[type="checkbox"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px; /* Reduz o espaço entre a caixa de seleção e o texto */
+    accent-color: #28a745; /* Cor da caixa de seleção */
+    transform: scale(1); /* Diminui o tamanho da caixa de seleção */
+    width: auto; /* Para garantir que o tamanho se ajuste corretamente */
+    height: auto; /* Para garantir que o tamanho se ajuste corretamente */
+    align-self: center;
+    align-items: center;
+}
+
+.login-checkbox-label label {
+    margin: 0; /* Remove margem do rótulo para melhor alinhamento */
+    cursor: pointer; /* Muda o cursor para indicar que o rótulo é clicável */
+}
+
+

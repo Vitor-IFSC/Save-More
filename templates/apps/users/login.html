@@ -1,0 +1,71 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+    <a href="{% url 'index' %}" id="link-logo-home">
+        <img src="{% static 'assets/logo/logo-2-azul.png' %}" id="fixed-logo-login" alt="Logo Save More">
+    </a>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <section class="login-section">
+        <div class="login-form-container">
+            <div class="login-form" style="display: flex; gap: 20px;">
+                <div class="login-quote" sytle="display: flex; height: 1000px; width: auto;">
+                    <p>"Não espere ter muito para poder ajudar o próximo. Quando o desejo de doar brotar em seu coração, DOE! Pois o pouco se tornará muito.”</p>
+                    <h1>Bia Cortéz</h1>
+                </div>
+                <h2>Login</h2>
+                <form action="{% url 'login' %}" class="form-login" method="POST">
+                    {% csrf_token %}
+                    <div class="row-form">
+                        {% for field in form.visible_fields %}
+                            <div class="login-form-group" style="width: 400px;">
+                                <label for="{{ field.id_for_label }}" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; margin-bottom: 0px;">{{field.label}}</label>
+                                {{ field }}
+                                
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="login-form-group">
+                        <button type="submit" style="background-color: var(--laranja); color: black; border: none; border-radius: 5px; padding: 12px 180px 12px 180px; font-size: 16px; cursor: pointer; transition: align-self: center; margin-top: 30px;"> Logar </button>
+                    </div>
+{% comment %}                     
+                    <!-- Nome -->
+                    <div class="login-form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+            
+                    <!-- Email -->
+                    <div class="login-form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Senha -->
+                    <div class="login-form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <button type="button" class="login-show-password" onclick="">&#128065;</button> <!-- ícone de olho -->
+                    </div>
+            
+                    <!-- Confirmar Senha -->
+                    <div class="login-form-group">
+                        <label for="confirmar_senha">Confirme sua Senha:</label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+                        <button type="button" class="login-show-password" onclick="">&#128065;</button> <!-- ícone de olho -->
+                    </div>
+                    <!-- Botão de envio -->
+                    <div class="login-form-group">
+                        <button type="submit">Enviar</button>
+                    </div> {% endcomment %}
+                </form>
+                
+            </div>
+        </div>
+        <img src="{% static '/assets/imagens/img-login.png' %}" alt="" >
+    </section>
+{% endblock %}
